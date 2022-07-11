@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Yourself</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0 px;
+        padding: 0 px;
+        /* background: url('IMG/me.jpg'); */
+        background: url('IMG/1.jpg');
+        /* background: url('IMG/2.jpg'); */
+        /* background: url('IMG/3.jpg'); */
+        /* background-color: black; */
+        height: 2122px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: fixed;
+        font: bolder;
+        margin: 5px;
+        font-size: 19px;
+        left: 50px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 70px;
+    }
+
+    .mid {
+        /* color: red; */
+        position: fixed;
+        mask-position: center;
+        display: block;
+        background-color: bisque;
+        background-position: fixed;
+        right: 380px;
+        width: 38%;
+        text-align: center;
+        top: 1px;
+        margin: 20px auto;
+        /* border: 2px solid yellowgreen; */
+    }
+
+    .right {
+        position: fixed;
+        right: 34px;
+        top: 20px;
+        background-color: bisque;
+        display: inline-block;
+        /* border: 2px solid black; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        color: black;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        font-size: x-large;
+        color: black;
+        padding: 30px 8px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        letter-spacing: .05em;
+        text-decoration: underline;
+        /* color: grey */
+        opacity: .5;
+        /* padding: 23px; */
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        font: bold;
+        margin: 3px 3px;
+        background-color: white;
+        /* color : white; */
+        border: 5px;
+        border-radius: 10px;
+        padding: 6px 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        /* background-color: grey; */
+        display: none;
+        text-decoration: underline;
+        /* color: grey; */
+        opacity: .3px;
+    }
+
+    .container {
+        border: 3px solid rgb(6, 26, 6);
+        margin: 120px 69px;
+        padding: 68px 4px;
+        width: 34%;
+        border-radius: 24px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 9px auto;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        border: 2px solid black;
+        width: 78%;
+        border-radius: 10px;
+        margin: 20px auto;
+        font-size: 16px;
+        /* text-align: center; */
+    }
+
+    .container a {
+        text-align: center;
+        color: black;
+    }
+
+    .container h1:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+        /* opacity: .3; */
+    }
+
+    .myself {
+        color: black;
+        text-align: center;
+        padding: 1px 110px;
+        width: 25%;
+    }
+
+    .skills {
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding-top: 1243px;
+        /* border: 1px solid red; */
+        width: 21%;
+        padding: 75px 157px;
+    }
+
+    .skill {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-decoration: none;
+    }
+
+    .skills h2:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+        opacity: .3;
+    }
+
+    .mine {
+        position: absolute;
+        margin-top: -1205px;
+        right: 418px;
+        /* height: 1088px; */
+        width: 293px;
+
+    }
+
+    .mine h1 {
+        text-align: center;
+    }
+
+    .mine h1:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+
+    .myself h2:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+
+    .skills a {
+        color: black;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 19px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        /* letter-spacing: .5em; */
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+    /* Facebook */
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        border-radius: 50%;
+    }
+
+    /* Twitter */
+    .fa-github {
+        background: #55ACEE;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .fa-instagram {
+        background-color: #e95950;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .contact a {
+        /* top: 23px; */
+        align-content: center;
+        margin-top: 25px;
+        margin-right: 23px;
+        border: solid black;
+        padding: 30px 30px;
+    }
+
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+    #about {
+        top: 20px;
+        background-color: #04AA6D;
+    }
+
+    #blog {
+        top: 80px;
+        background-color: #2196F3;
+
+    }
+
+    #projects {
+        top: 140px;
+        background-color: #f44336;
+    }
+
+    #contact {
+        top: 200px;
+        background-color: #555
+    }
+
+    .hi:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="IMG/wofu.png" alt="">
+            <div class="hi" style="margin-left: 3px;"><b>WooFoo</b></div>
+        </div>
+
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"><b>HOME</b></a></li>
+                <li><a href="#"><b>SKILLS</b></a></li>
+                <li><a href="#"><b>PORTFOLIO</b></a></li>
+                <li><a href="#"><b>SUMMARY</b></a></li>
+            </ul>
+        </div>
+
+        <!-- right for buttons -->
+        <div class="right">
+            <!-- <button class="btn">Call Us</button><button class="btn">Email Us</button>
+             -->
+            <ul class="navbar">
+                <li><a href="https://sujanstha3220@gmail.com"><b>EMAIL</b></a></li>
+                <li><a href="https://github.com/darkweb19"><b>GITHUB</b></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul class=skill">
+            <li><a href="#"><b>Native c and c++</b></a></li>
+            <li><a href="#"><b>Graphics Desing</b> </a></li>
+            <li><a href="#"><b>Basics in HTML and </b></a></li>
+            <li><a href="#"><b>Knowlegde in Computer Network </b></a></li>
+            <li><a href="#"><b>Basics in Python </b></a></li>
+        </ul>
+    </div>
+
+    <div class="skills" style="margin-left:30px;">
+        <h2>Hover it for showcase skills</h2>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="about">Hiiii!</a>
+        <a href="#" id="blog">I </a>
+        <a href="#" id="projects">Am </a>
+        <a href="#" id="contact">Sujan</a>
+    </div>
+
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <p><b> Created a simple Banking System using Object Orientation based on c++ language
+                ,where the primary objective is to create a new bank account asking user their major
+                information</b></p>
+        <a href="https://github.com/darkweb19/Banking-system/blob/main/banksys.cpp"> <b>Github Link</b> </a>
+
+    </div>
+    <div class="myself">
+        <h2>About Me</h2>
+        <p>
+            <b> I am passionate in coding and also a job seeker with strong personal developing skills
+                eager to be productive and secure entry-level position. <br> Ready to help team achieve company
+                goals and tackle any subsequent obstacle without hesitation being good at problem solving.
+            </b>
+        </p>
+    </div>
+
+    <div class="mine">
+        <h1>Me</h1>
+        <img src="IMG/me1.jpg" alt="Error">
+    </div>
+
+    <div class="contact">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Add font awesome icons -->
+        <a href="https://www.facebook.com/SujanSthaa32/" class="fa fa-facebook"></a>
+        <a href="https://github.com/darkweb19" class="fa fa-github"></a>
+        <a href="https://www.instagram.com/sujansthaa" class="fa fa-instagram"></a>
+    </div>
+</body>
+
+</html>
