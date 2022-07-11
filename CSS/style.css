@@ -1,0 +1,292 @@
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0 px;
+        padding: 0 px;
+        /* background: url('IMG/me.jpg'); */
+        background: url('IMG/1.jpg');
+        /* background: url('IMG/2.jpg'); */
+        /* background: url('IMG/3.jpg'); */
+        /* background-color: black; */
+        height: 2122px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: fixed;
+        font: bolder;
+        margin: 5px;
+        font-size: 19px;
+        left: 50px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 70px;
+    }
+
+    .mid {
+        /* color: red; */
+        position: fixed;
+        mask-position: center;
+        display: block;
+        background-color: bisque;
+        background-position: fixed;
+        right: 380px;
+        width: 38%;
+        text-align: center;
+        top: 1px;
+        margin: 20px auto;
+        /* border: 2px solid yellowgreen; */
+    }
+
+    .right {
+        position: fixed;
+        right: 34px;
+        top: 20px;
+        background-color: bisque;
+        display: inline-block;
+        /* border: 2px solid black; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        color: black;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        font-size: x-large;
+        color: black;
+        padding: 30px 8px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+
+        letter-spacing: .05em;
+        text-decoration: underline;
+        /* color: grey */
+        opacity: .5;
+        /* padding: 23px; */
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        font: bold;
+        margin: 3px 3px;
+        background-color: white;
+        /* color : white; */
+        border: 5px;
+        border-radius: 10px;
+        padding: 6px 5px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        /* background-color: grey; */
+        display: none;
+        text-decoration: underline;
+        /* color: grey; */
+        opacity: .3px;
+    }
+
+    .container {
+        border: 3px solid rgb(6, 26, 6);
+        margin: 120px 69px;
+        padding: 68px 4px;
+        width: 34%;
+        border-radius: 24px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 9px auto;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        border: 2px solid black;
+        width: 78%;
+        border-radius: 10px;
+        margin: 20px auto;
+        font-size: 16px;
+        /* text-align: center; */
+    }
+
+    .container a {
+        text-align: center;
+        color: black;
+    }
+
+    .container h1:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+        /* opacity: .3; */
+    }
+
+    .myself {
+        color: black;
+        text-align: center;
+        padding: 1px 110px;
+        width: 25%;
+    }
+
+    .skills {
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding-top: 1243px;
+        /* border: 1px solid red; */
+        width: 21%;
+        padding: 75px 157px;
+    }
+
+    .skill {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-decoration: none;
+    }
+
+    .skills h2:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+        opacity: .3;
+    }
+
+    .mine {
+        position: absolute;
+        margin-top: -1205px;
+        right: 418px;
+        /* height: 1088px; */
+        width: 293px;
+
+    }
+
+    .mine h1 {
+        text-align: center;
+    }
+
+    .mine h1:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+
+    .myself h2:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+
+    .skills a {
+        color: black;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 19px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+        /* letter-spacing: .5em; */
+        opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+    /* Facebook */
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        border-radius: 50%;
+    }
+
+    /* Twitter */
+    .fa-github {
+        background: #55ACEE;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .fa-instagram {
+        background-color: #e95950;
+        color: white;
+        border-radius: 50%;
+    }
+
+    .contact a {
+        /* top: 23px; */
+        align-content: center;
+        margin-top: 25px;
+        margin-right: 23px;
+        border: solid black;
+        padding: 30px 30px;
+    }
+
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+    #about {
+        top: 20px;
+        background-color: #04AA6D;
+    }
+
+    #blog {
+        top: 80px;
+        background-color: #2196F3;
+
+    }
+
+    #projects {
+        top: 140px;
+        background-color: #f44336;
+    }
+
+    #contact {
+        top: 200px;
+        background-color: #555
+    }
+
+    .hi:hover {
+        transition: .8s;
+        transform: rotate(180deg);
+        text-decoration: underline;
+    }
+</style>
